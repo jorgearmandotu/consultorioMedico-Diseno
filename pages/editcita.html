@@ -35,14 +35,22 @@
                 <br><br>
                 <h1 class="header center green-text">Consultorio Médico</h1>
                 <div class="row center">
-                    <h5 class="header col s12 light">Buscar Citas</h5>
+                    <h5 class="header col s12 light">Modificar cita</h5>
                 </div>
                 <br><br>
-                <form action="#!">
+                <label class="flow-text">Name: Pedro Suarez</label>
+                <label class="flow-text">Identificación: 1.085.321.459</label>
+                <form action="!#">
                     <div class="row">
-                        <div class="input field col s12 m6">
-                            <label class="active" for="fecha">Fecha</label>
-                            <input id="fecha" type="text" class="datepicker" required value="12-06-22" >
+                        <div class="input-field col s12 m6">
+                            <input value="3168245621" id="telefono" type="tel" class="validate" required/>
+                            <label class="active" for="telefono">Telefono</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12 m6">
+                            <input value="pedros19@gmail.com" id="email" type="email" class="validate" />
+                            <label class="active" for="email">Correo electronico</label>
                         </div>
                     </div>
                     <div class="row">
@@ -68,45 +76,32 @@
                         </div>
                     </div>
                     <div class="row">
+                        <div class="input field col s12 m6">
+                            <label class="active" for="fecha">Fecha</label>
+                            <input id="fecha" value="12-06-22" type="text" class="datepicker" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12 m6">
+                            <select id="hora">
+                                <option value="" disabled selected>Selecione una    opcion</option>
+                                <option value="">8:00</option>
+                                <option value="">8:30</option>
+                                <option value="">9:00</option>
+                                <option value="">9:30</option>
+                                <option value="">10:00</option>
+                                <option value="" selected>15:30</option>
+                            </select>
+                            <label  for="hora">Hora</label>
+                        </div>
+                    </div>
+                    <div class="row">
                         <div class="col s12 m6 center">
-                            <button class="btn waves-effect waves-ligth" type="submit" name="action">Buscar<i class="material-icons search">search</i></button>
+                            <button class="btn waves-effect waves-ligth" type="submit" name="action">Guardar<i class="material-icons save">save</i></button>
+                            <a class="waves-effect waves-light btn" href="modificacion.html"><i class="material-icons right">cancel</i>Cancelar</a>
                         </div>
                     </div>
                 </form>
-                <div class="search-results col s12 m6">
-                    <table class="responsive-table">
-                        <thead>
-                          <tr>
-                              <th>Fecha</th>
-                              <th>Hora</th>
-                              <th>Especialidad</th>
-                              <th>op</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                              <td>12-06-22</td>
-                              <td>11:00</td>
-                              <td>Neumologia</td>
-                              <td>Andres Garcia</td>
-                              <td>
-                                <a href="editcita.html"><i class="material-icons save">edit</i></a>
-                                <a href="#!"><i class="material-icons save">block</i></a>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>12-06-22</td>
-                              <td>15:30</td>
-                              <td>Neumologia</td>
-                              <td>Andres Garcia</td>
-                              <td>
-                                <a href="#!"><i class="material-icons save">edit</i></a>
-                                <a href="#!"><i class="material-icons save">block</i></a>
-                              </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
             </div>
         </main>
 

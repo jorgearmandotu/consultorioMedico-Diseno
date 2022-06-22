@@ -7,3 +7,7 @@ header, main, footer {
       padding-left: 0;
     }
   }
+
+  #btn_search_id {
+    margin-top: 20px;
+  }

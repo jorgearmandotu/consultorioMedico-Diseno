@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="../css/main.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+        <header>
+            <ul id="slide-out" class="sidenav sidenav-fixed">
+                <li>
+                    <div class="user-view">
+                        <div class="background cyan darken-1">
+                            <img src="">
+                        </div>
+                        <a href="#user"><img class="circle" src="../assets/profile/pngwing.com.png" /></a>
+                        <a href="name"><span class="white-text name">Juan perez</span></a>
+                    </div>
+                </li>
+                <li><div class="divider"></div></li>
+                <li><a class="waves-effect" href="asignacion.html">Asignar Citas</a></li>
+                <li><a class="waves-effect" href="modificacion.html">Modificar Citas</a></li>
+                <li><a class="waves-effect" href="buscar.html">Buscar Citas</a></li>
+            </ul>
+            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </header>
+        <main>
+            <div class="container">
+                <br><br>
+                <h1 class="header center green-text">Consultorio Médico</h1>
+                <div class="row center">
+                    <h5 class="header col s12 light">Modificar Citas</h5>
+                </div>
+                <br><br>
+                <form action="#!">
+                    <div class="row">
+                        <div class="input-field col s10 m5 center">
+                            <div class="search-wrapper focused">
+                                <input id="search" placeholder="Buscar por CC" required />
+                            </div>
+                        </div>
+                        <div class="col s1 m1 center" id="btn_search_id">
+                            <button class="btn waves-effect cyan darken-1 btn-small" type="submit" name="action">
+                                <i class="material-icons">search</i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <div class="row">
+                    <label class="flow-text">CC. 1.085.321.459 Pedro Suarez</label>
+                </div>
+                <div class="search-results col s12 m6">
+                    <table class="responsive-table">
+                        <thead>
+                          <tr>
+                              <th>Fecha</th>
+                              <th>Hora</th>
+                              <th>Especialidad</th>
+                              <th>op</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                              <td>12-06-22</td>
+                              <td>15:30</td>
+                              <td>Neumologia</td>
+                              <td>Andres Garcia</td>
+                              <td>
+                                <a href="editcita.html"><i class="material-icons save">edit</i></a>
+                                <a href="#!"><i class="material-icons save">block</i></a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>13-06-22</td>
+                              <td>11:00</td>
+                              <td>Cardiologia</td>
+                              <td>Juan Duarte</td>
+                              <td>
+                                <a href="#!"><i class="material-icons save">edit</i></a>
+                                <a href="#!"><i class="material-icons save">block</i></a>
+                              </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="../js/materialize.js"></script>
+      <script type="text/javascript" src="../js/main.js"></script>
+    </body>
+  </html>
